@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"tamagoshi"},{"l":"tamagoshi.controller"},{"l":"tamagoshi.graphic"},{"l":"tamagoshi.service"},{"l":"tamagoshi.tamagoshis"}]

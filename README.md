@@ -1,4 +1,4 @@
-# tamagoshi_graphic
+# Tamagoshi graphic
 
 ## Concepts de cours et leurs utilisations :
 
@@ -9,4 +9,4 @@
 - Classe properties : [stockage des propriétés et nom des tamagoshis](resource/config.properties)
 - I18n : Interface disponible en [français](src/MessagesBundle_fr_FR.properties) et [anglais](src/MessagesBundle_en_US.properties), gestion avec [LanguageService](src/tamagoshi/service/LanguageService.java)
 - java.util.logging : traçage de l'application (état du tamagoshi, nouveau cylce, etc...)
-
+- Javadoc : [protected](javadoc/protected/index.html) et [private](javadoc/private/index.html)
