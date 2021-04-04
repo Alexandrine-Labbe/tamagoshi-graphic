@@ -10,3 +10,10 @@
 - I18n : Interface disponible en [français](src/MessagesBundle_fr_FR.properties) et [anglais](src/MessagesBundle_en_US.properties), gestion avec [LanguageService](src/tamagoshi/service/LanguageService.java)
 - java.util.logging : traçage de l'application (état du tamagoshi, nouveau cylce, etc...)
 - Javadoc : [protected](javadoc/protected/index.html) et [private](javadoc/private/index.html)
+
+
+## Informations :
+
+- Je n'ai pas utilisé jlink pour faire le .jar, j'ai utilisé les artifacts IntelliJ
+- [Lien de téléchargement du .jar](https://filesender.renater.fr/?s=download&token=ecb7cecb-2f2c-4de6-8197-be7187f781f7)
+- Commande pour le lancer `java -jar tamagoshi_graphic.jar`
