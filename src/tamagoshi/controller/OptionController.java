@@ -5,21 +5,18 @@ import tamagoshi.service.LanguageService;
 
 import java.io.*;
 import java.util.HashMap;
-import java.util.Objects;
 import java.util.Properties;
 
 public class OptionController{
 
     private FenetreOption fenetreOption;
-    private String rootPath;
     private String propertiesFileLocation;
     private HashMap<String, String> languageByCountry;
     private Properties props;
 
     public OptionController()
     {
-        this.rootPath = Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource("")).getPath();
-        this.propertiesFileLocation = rootPath +  "config.properties";
+        this.propertiesFileLocation = "/config.properties";
         this.languageByCountry = new HashMap<>();
         languageByCountry.put("fr", "FR");
         languageByCountry.put("en", "US");
@@ -35,7 +32,9 @@ public class OptionController{
     public String loadProperties(String propertyName, String defaultProperty)
     {
         try {
-            InputStream in = new FileInputStream(propertiesFileLocation);
+
+
+            InputStream in = this.getClass().getResourceAsStream(propertiesFileLocation);
             props.load(in);
 
             String propertyValue =  props.getProperty(propertyName);
