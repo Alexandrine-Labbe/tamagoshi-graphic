@@ -22,8 +22,14 @@ public class FenetreAide extends FenetreAbstract {
         JTextArea helpTextArea = new JTextArea(5, 20);
         helpTextArea.setText(messages.getString("helpText"));
 
+        JTextArea creditTextArea = new JTextArea(2, 20);
+        creditTextArea.setText("Icons made by Freepik - www.flaticon.com");
+
         helpTextArea.setEditable(false);
         helpTextArea.setOpaque(false);
+
+        creditTextArea.setEditable(false);
+        creditTextArea.setOpaque(false);
 
         JPanel helpPanel = new JPanel();
 
@@ -35,9 +41,13 @@ public class FenetreAide extends FenetreAbstract {
 
         helpTextArea.setLineWrap(true);
         helpTextArea.setWrapStyleWord(true);
+        creditTextArea.setLineWrap(true);
+        creditTextArea.setWrapStyleWord(true);
 
         helpPanel.add(helpTextArea);
+        helpPanel.add(creditTextArea);
         helpPanel.setBackground(getBgColor());
+        creditTextArea.setBackground(getBgColor());
 
         add(helpPanel);
 

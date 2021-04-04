@@ -32,7 +32,7 @@ public class FenetreResultats extends FenetreAbstract {
 
         resultsPanel.setLayout(boxlayout);
 
-        resultsPanel.setBorder(new EmptyBorder(new Insets(150, 100, 100, 150)));
+        resultsPanel.setBorder(new EmptyBorder(new Insets(150, 100, 150, 100)));
 
         resultsTextArea.setLineWrap(true);
         resultsTextArea.setWrapStyleWord(true);

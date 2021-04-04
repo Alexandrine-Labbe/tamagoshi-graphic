@@ -9,13 +9,17 @@ import tamagoshi.tamagoshis.TamagoshiObserver;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
 import java.util.ResourceBundle;
 
 public class FenetreTamagoshi extends FenetreAbstract implements LanguageServiceObserver, TamagoshiObserver {
 
     private TamaGameController tamaGameController;
     private URL imagePath = this.getClass().getResource("/images/dinosaur.png");
+    private URL imageTombstonesPath = this.getClass().getResource("/images/tombstones.png");
     private ResourceBundle messages;
     private JButton btnFeed;
     private JButton btnPlay;
@@ -77,6 +81,13 @@ public class FenetreTamagoshi extends FenetreAbstract implements LanguageService
         funLabel = new JLabel(messages.getString("fun") + " " +tamagoshi.getFun() + "/" + tamagoshi.getMaxFun() + " " );
         hungerLabel = new JLabel(messages.getString("hunger") + " " +tamagoshi.getEnergy() + "/" + tamagoshi.getMaxEnergy() + " " );
 
+    }
+
+    public void updateImage()
+    {
+        ImageIcon image = new ImageIcon(imageTombstonesPath);
+
+        imageLabel.setIcon(image);
     }
 
 

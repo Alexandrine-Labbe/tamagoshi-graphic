@@ -106,6 +106,10 @@ public class TamaGameController {
             tamagoshi.consommeFun();
             tamagoshi.consommeEnergie();
             tamagoshi.vieillit();
+
+            if (tamagoshi.isDead()) {
+                f.updateImage();
+            }
         }
 
         alive.removeIf(f -> f.getTamagoshi().isDead());
