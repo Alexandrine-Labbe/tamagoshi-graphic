@@ -1,5 +1,7 @@
 # Tamagoshi graphic
 
+Projet réalisé pour un cours dans le cadre de la licence professionnelle APIDAE.
+
 ## Concepts de cours et leurs utilisations :
 
 - Swing : utilisation de Swing pour réaliser l'interface graphique
